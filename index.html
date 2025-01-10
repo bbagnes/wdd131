@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 Web Project</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Brigham Bagnes</title>
+    <meta name="description" content="Brigham Bagnes' WDD 131 - Dynamic Web Fundamentals Home Page">
+    <meta name="author" content="Brigham Bagnes">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 Bagnes</h1>
-    <p>This is a test paragraph.</p>
+    <header>
+        <h2>WDD 131 - Dynamic Web Fundamentals - Brigham Bagnes</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/brigham-bagnes-720451196/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            <a href="" target="_blank">Final Project</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="card" class="me">
+            <h3>About Me</h3>
+            <img src="images/brigham_bagnes_profile_pic.jpg" alt="Brigham Bagnes - 2014">
+            <p>I was born and raised in Salt Lake City, Utah, United States of America, and am the youngest of eight children; all of whom live in Utah. Despite my large family; whom I love; I am largely an introvert. Which makes becoming a programmer an ideal career for me; because I can work from home, and have fewer social interations than most jobs require. My personal interests include genealogical research and watching C & K dramas.</p>
+        </section>
+        <section class="card" class="resources">
+            <h3>Web Development Resources</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Website Development Resources</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                <li><a href="https://coolors.co/000807-a2a3bb-9395d3-b3b7ee-fbf9ff" target="_blank">Color Palette Selection</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Brigham Bagnes | United States of America</p>
+        <p id="lastModified"></p>
+    </footer>    
 </body>
 </html>
