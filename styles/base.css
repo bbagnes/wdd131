@@ -62,7 +62,6 @@ nav a {
 nav a:hover {
     background-color: var(--nav-hover-link-color);
     text-decoration: underline;
-    margin: 1px solid black;
 }
 
 main {
