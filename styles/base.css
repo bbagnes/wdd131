@@ -90,11 +90,13 @@ main {
 
 p {
     padding: 5px;
+    margin: 0;
 }
 
 img {
     width: 180px;
     padding: 5px;
+    
 }
 
 .profilepic {
