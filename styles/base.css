@@ -96,12 +96,14 @@ main {
 .me {
     grid-column: 1;
     width: 640px;
+    min-width: 160px;
     padding-left: 3px;
 }
 
 .resources {
     grid-column: 2;
     width: 320px;
+    min-width: 80px;
 }
 
 .card {   
