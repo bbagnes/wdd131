@@ -139,6 +139,7 @@ img {
 
 .resources ul {
     list-style-type: square;
+    margin: 2px;
 }
 
 footer {
