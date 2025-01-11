@@ -99,7 +99,15 @@ p {
 
 img {
     width: 180px;
+}
+
+.profilepic {
     float: right;
+}
+
+.flag {
+    float: left;
+    margin: 5px;
 }
 
 .resources ul {
