@@ -15,7 +15,7 @@
 }
 body {
     display: grid;
-    grid-template: auto 1fr auto / 66% 33%;
+    grid-template: auto 1fr auto / 640px 320px;
     max-width: 960px;
     font-family: var(--paragraph-font);
     justify-content: center;
@@ -67,13 +67,13 @@ main {
 }
 
 .me {
-    grid-column: 1/2;
+    grid-column: 1;
     width: 640px;
     padding-left: 3px;
 }
 
 .resources {
-    grid-column: 2/3;
+    grid-column: 2;
     width: 320px;
 }
 
