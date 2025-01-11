@@ -32,7 +32,7 @@ header {
     align-items: center;    
 }
 
-h2 {
+h1 {
     font-family: var(--heading-font);
     text-align: center;
     padding: 0;
