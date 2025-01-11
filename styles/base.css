@@ -13,6 +13,7 @@
     --nav-hover-link-color: #FF0000;
     --nav-hover-background-color: #EEE8D3;
 }
+
 body {
     display: grid;
     grid-template: auto 1fr auto / 66.6% 33.3%;
@@ -32,7 +33,7 @@ header {
     align-items: center;    
 }
 
-h1, h3 {
+h1, h2 {
     font-family: var(--heading-font);
     text-align: center;
     background-color: teal;
@@ -124,5 +125,6 @@ footer {
 }
 
 #lastModified {
-    font-size: 1rem;
+    font-size: .9rem;
+    color: white;
 }
