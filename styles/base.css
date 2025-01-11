@@ -8,7 +8,7 @@
     --heading-font: "BioRhyme", sans-serif;
     --paragraph-font: "Fira Sans", sans-serif;
 
-    --nav-background-color:--accent1-color;
+    --nav-background-color:#dcba93;
     --nav-link-color: black;
     --nav-hover-link-color: #FF0000;
     --nav-hover-background-color: #EEE8D3;
@@ -91,7 +91,7 @@ h3 {
     border-radius: 8px; 
     margin: 5px;
     text-wrap: wrap;
-    padding: 10px;
+    padding: 0;
 }
 
 p {
@@ -100,6 +100,7 @@ p {
 
 img {
     width: 180px;
+    padding: 5px;
 }
 
 .profilepic {
@@ -110,7 +111,7 @@ img {
     float: left;
     margin: 5px;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px 5px 5px 10px;
 }
 
 .resources ul {
@@ -121,11 +122,12 @@ footer {
     grid-column: 1/4;
     height: 12vh;
     background-color:teal;
-    color: black;
+    color: #000;
     text-align: center;
+    font-weight: 900;
     padding: 5px;
 }
 
 #lastModified {
-    font-size: .9rem;
+    font-size: 1rem;
 }
