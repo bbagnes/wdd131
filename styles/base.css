@@ -5,8 +5,8 @@
     --secondary-color: #EEE8D3;
     --accent1-color: #dcba93;
 
-    --heading-font: "BioRhyme", sans-serif;
-    --paragraph-font: "Fira Sans", sans-serif;
+    --heading-font: "BioRhyme", Arial, sans-serif;
+    --paragraph-font: "Fira Sans", Arial, sans-serif;
 
     --nav-background-color:#dcba93;
     --nav-link-color: black;
@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template: auto 1fr auto / 66.6% 33.3%;
     max-width: 960px;
-    font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
+    font-family: var(--paragraph-font, Arial, Helvetica, sans-serif);
     justify-content: center;
     height: 100vh;    
     font-size: 1.2em;
@@ -34,7 +34,7 @@ header {
 }
 
 h1, h2 {
-    font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+    font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: center;
     background-color: teal;
     padding: 0;
