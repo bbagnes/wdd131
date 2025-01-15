@@ -9,7 +9,7 @@ button.addEventListener('click', function(){
     if (input.value.trim() !== '') {
        li.textContent = input.value;
        deleteButton.textContent = '❌';
-       deleteButton.ariaLabel = "Delete Scripture";
+       deleteButton.ariaLabel = "Button: Remove Scripture";
        li.appendChild(deleteButton);
        list.append(li); 
     }
