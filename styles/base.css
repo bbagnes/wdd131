@@ -126,6 +126,11 @@ img {
     padding: 5px;    
 }
 
+hr {
+    border: 2px solid #dcba93;
+    width: 90%
+}
+
 .profilepic {
     float: right;
 }
