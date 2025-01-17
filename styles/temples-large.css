@@ -1,0 +1,39 @@
+@media only screen and (min-width: 50em) {
+
+    nav {
+        align-content: center;
+    }
+
+	.navigation {
+		display: flex;
+        align-content: space-around;
+        justify-content: center;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+        padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+    h1.show {
+        display: block;
+    }
+
+    figure {
+        width: 300px;
+    }
+
+    img {
+        width: 240px;
+        padding: 5px;    
+    }
+}
