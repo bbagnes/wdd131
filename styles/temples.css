@@ -46,15 +46,13 @@ header {
     background-color: teal;
     color: #000;
     justify-content: space-between;
-    align-items: left;
     padding: 10px;   
 }
 
 h1 {
-    display: flexbox;
+    display: flex;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
-    padding: 0;
     background-color: teal;
 }
 
@@ -133,7 +131,7 @@ h2 {
 }
 
 figure {
-    display: flexbox;
+    display: block;
     align-content: center;
     width: 360px;
     margin: auto;
