@@ -45,7 +45,7 @@ header {
     display: flex;    
     background-color: teal;
     color: #000;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: left;
     padding: 10px;   
 }
@@ -129,7 +129,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-content: space-evenly; 
-       
+
 }
 
 figure {
