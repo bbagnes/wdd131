@@ -1,18 +1,33 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 580px) {   
 
+    figure {
+        width: 250px;
+    }
+
+    img {
+        width: 250px;  
+    }    
+}
+
+
+@media only screen and (min-width: 780px) {
+
+    header {
+        justify-content: space-between;
+    }
     nav {
         align-content: center;
     }
 
 	.navigation {
 		display: flex;
-        align-content: space-around;
+        align-content: space-evenly;
         justify-content: center;
 	}
 
 	.navigation li {
-		display: block;
-		flex: 1 1 80%;
+		display: flex;
+		justify-content: flex-end;
         padding: 0;
 	}
 
@@ -27,13 +42,3 @@
     h1.show {
         display: block;
     }
-
-    figure {
-        width: 240px;
-    }
-
-    img {
-        width: 240px;
-        padding: 5px;    
-    }
-}

@@ -54,7 +54,7 @@ h1 {
     display: flexbox;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
-    padding: 0 5px 5px 0;
+    padding: 0;
     background-color: teal;
 }
 
@@ -113,10 +113,9 @@ main {
     max-width: 960px;
     display: grid;
     grid-template: 40px auto / auto;
-    align-content:space-around;
+    align-content:space-evenly;
     align-items: center;
-    background-color: #EEE8D3;
-    padding: 0; 
+    background-color: #EEE8D3; 
     margin: 0 auto;
 }
 
@@ -124,19 +123,21 @@ h2 {
     display: block;
     width: 100%;
     text-align: center;
-    margin: 5px;
 }
 
 .temple {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;    
+    align-content: space-evenly; 
+       
 }
 
 figure {
-    display: block;
+    display: flexbox;
     align-content: center;
     width: 360px;
+    margin: auto;
+    padding: 15px;
    }
 
 figcaption {    
