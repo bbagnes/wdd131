@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
 
     nav {
         align-content: center;
@@ -12,7 +12,7 @@
 
 	.navigation li {
 		display: block;
-		flex: 1 1 100%;
+		flex: 1 1 80%;
         padding: 0;
 	}
 
@@ -29,7 +29,7 @@
     }
 
     figure {
-        width: 300px;
+        width: 240px;
     }
 
     img {
