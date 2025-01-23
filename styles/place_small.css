@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+}
+
+.oregano-regular-italic {
+    font-family: "Oregano", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.radley-regular-italic {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+:root {
+    --primary-color: #DA1219;
+    --secondary-color: #FCDD07;   
+    --accent1-color: #E7E7E7;
+    --accent2-color: #0F47AF;
+    --accent3-color: #CAB312;
+
+    --heading-font: "Oregano", Arial, sans-serif;
+    --paragraph-font: "Radley", Arial, sans-serif;
+
+    --bord: 1px solid #0F47AF;
+
+}
+
+body{
+    display: grid;
+    grid-template: 100px 3fr 60px / 1fr;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    grid-row: 1;
+    height: 100px;
+    background-color: var(--secondary-color);
+    margin-top: 0;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+main {
+    grid-row: 0;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+div {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.data, .weather{
+    display: block;        
+    background-color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border-bottom: var(--accent3-color);
+}
+
+.weather img {
+    display: block;
+    column-span: 2;
+    align-content: center;
+    background-color: var(--accent1-color);
+
+    margin: auto;
+
+}
+
+#hide {
+    display: block;
+    background-color: var(--accent1-color);
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    display: block;   
+    column-span: 2;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+}
+
+.row {
+    display: block;
+}
+
+.col1, .col2 {
+    display: inline-block;
+    width: 120px;
+    font-size: 1rem;    
+    text-align: center;
+}
+
+.col1 {    
+    grid-column: 1;
+    font-weight: 700;
+    text-align: right;
+}
+
+.col2 {
+    grid-column: 2;
+    font-weight: 500;
+    text-align: left;        
+}
+
+footer {
+    grid-row: 3;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+p {
+    padding: 2px;
+}

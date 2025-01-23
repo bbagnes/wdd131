@@ -1,0 +1,55 @@
+@media screen and (min-width: 580px) {
+
+    .data, .weather { 
+        position: absolute;             
+        width: 250px;
+        height: auto;
+        background-color: #CAB312;
+        border: var(--bord);
+        }
+
+    .data {
+         top: 20%;
+        left: 5%;
+    }
+
+    .weather {        
+        bottom: 35%;
+         right: 5%;
+        padding: 0;
+    }
+    
+    .icon::after {
+        content: "⛅";
+        padding-left: 40px;
+    }
+
+    #hide {
+        display: none;
+        content: "";
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .data {
+        left: 8%;
+    }
+
+    .weather {
+        right: 8%;
+        bottom: 18%;
+    }    
+}
+
+@media screen and (min-width: 1080px) {
+
+    .data {
+        left: 25%;
+    }
+
+    .weather {
+        right: 25%;
+        bottom: 5%;
+    }
+}

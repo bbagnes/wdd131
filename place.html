@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sádaba, Spain</title>
+    <meta name="description" content="WDD 131 Sádaba, Spain Website">
+    <meta name="author" content="Brigham Bagnes">
+    <link rel="stylesheet" href="styles/place_small.css">
+    <link rel="stylesheet" href="styles/place_large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sádaba, Spain</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source srcset="images/sádaba_castle_hero_large.webp" media="min-width: 800px">
+            <source srcset="images/sádaba_castle_hero_medium.webp" media="min-width: 580px">
+            <source srcset="images/sádaba_castle_small.webp" media="min-width: 320px">        
+            <img src="images/sádaba_castle_small.webp" alt="Sádaba Castle, Sádaba, Zaragoza, Aragon, Spain." width="400" height="300">
+        </picture>
+        <div class="data">            
+            <h2>Data</h2>
+            <div class="row">
+                <div class="col1">Area:</div>
+                <div class="col2">129 km2 (50 mi2)                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">Population:</div>
+                <div class="col2">1,324</div>
+            </div>
+            <div class="row">
+                <div class="col1">Languages:</div>
+                <div class="col2">Basque, Spanish</div>
+            </div>
+            <div class="row">
+                <div class="col1">Currency:</div>
+                <div class="col2"> Aragon ANT</div>
+            </div>
+            <div class="row">
+                <div class="col1">Time Zone:<br>
+                    Summer (DST)
+                </div>
+                <div class="col2">UTC+1<br>
+                    (UTC+2)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">Calling Code:</div>
+                <div class="col2">+34</div>
+            </div>
+            <div class="row">
+                <div class="col1">Internet TLD:</div>
+                <div class="col2">.eus, .es</div>
+            </div>
+        </div>        
+        <div class="weather">
+            <div class="row">
+                <h2 class="icon">Weather</h2>
+            </div>
+            <div id="hide">
+                <img  src="images/weather-status-clouds.svg" alt="Sun partially blocked by white cloud">
+            </div>                        
+            <div class="row">
+                <div class="col1">Temperature:</div>
+                <div class="col2">47°F</div>
+            </div>
+            <div class="row">
+                <div class="col1">Precipitation:</div>
+                <div class="col2">50%</div>
+            </div>
+            <div class="row">
+                <div class="col1">Humidity:</div>
+                <div class="col2">98%</div>
+            </div>
+            <div class="row">
+                <div class="col1">Wind Speed:</div>
+                <div class="col2">7 mph</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>  * * *  Brigham Bagnes  * * *  Sádaba, Spain.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
