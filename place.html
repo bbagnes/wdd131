@@ -8,7 +8,7 @@
     <meta name="author" content="Brigham Bagnes">
     <link rel="stylesheet" href="styles/place_small.css">
     <link rel="stylesheet" href="styles/place_large.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Radley:ital@0;1&display=swap" rel="stylesheet">
@@ -68,19 +68,23 @@
             </div>                        
             <div class="row">
                 <div class="col1">Temperature:</div>
-                <div class="col2">47°F</div>
+                <div class="col2">4°C</div>
             </div>
             <div class="row">
                 <div class="col1">Precipitation:</div>
-                <div class="col2">50%</div>
+                <div class="col2">0%</div>
             </div>
             <div class="row">
                 <div class="col1">Humidity:</div>
-                <div class="col2">98%</div>
+                <div class="col2">95%</div>
             </div>
             <div class="row">
                 <div class="col1">Wind Speed:</div>
-                <div class="col2">7 mph</div>
+                <div class="col2">8 mph</div>
+            </div>
+            <div class="row">
+                <div class="col1">Wind Chill:</div>
+                <div id="windchill" class="col2"></div>
             </div>
         </div>
     </main>
