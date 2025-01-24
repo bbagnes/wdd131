@@ -10,9 +10,8 @@ document.getElementById("lastModified").innerHTML = "Last Modified: " + document
 let calculateWindChill = function(temperature, windspeed) {
     let temperature = (temperature * 9/5) + 32;
     let windChill = (35.74 + (temperature * 0.6215)) - (35.75 *(windspeed **.16)) + (0.4275 * temperature * (windspeed **0.16));
-    windChill = ((windChill -32) * 5/9);
-    windChill = Math.round(windChill);
-    return windChill;
+    let windChillCelsius = Math.round(((windChill -32) * 5/9));
+    return windChillCelsius;
 }
 
 document.querySelector("#windchill").textContent = `${calculateWindChill(4, 8)}℃`;
