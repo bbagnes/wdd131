@@ -87,13 +87,14 @@ h1 {
 	font-size: 1.5rem;
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover, .navigation a.active {
 	color: white;
 	background-color: #7AA;
 }
 
 .show li {
-	display: flex;
+	display: inline-block;
+    width: 100%;
     text-align: center;
 }
 

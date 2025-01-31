@@ -114,37 +114,58 @@ const temples = [
 
 createTempleCard(temples);
 
+
 const homeLink = document.querySelector(".home");
 const oldLink = document.querySelector(".old");
 const newLink = document.querySelector(".new");
 const largeLink = document.querySelector(".large");
 const smallLink = document.querySelector(".small");
+const h2 = document.querySelector("h2");
+
+homeLink.classList.add('active');
+
+let clearActive  = () => {
+	homeLink.classList.remove('active');
+	oldLink.classList.remove('active');
+	newLink.classList.remove('active');
+	largeLink.classList.remove('active');
+	smallLink.classList.remove('active');
+};
 
 homeLink.addEventListener("click", () => {
-	createTempleCard(temples);
-	document.querySelector(".active").textContent = "Home";
+	clearActive();
+	createTempleCard(temples);	
+	homeLink.classList.add('active');
+	document.querySelector("h2.active").textContent = "Home";
 })
 
 oldLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => parseInt(temple.dedicated) < 1900));
-	document.querySelector(".active").textContent = "Old";
+	clearActive();
+	createTempleCard(temples.filter(temple => parseInt(temple.dedicated) < 1900));	
+	oldLink.classList.add('active');
+	document.querySelector("h2.active").textContent = "Old";
 });
 
 newLink.addEventListener("click", () => {
+	clearActive();
 	createTempleCard(temples.filter(temple => parseInt(temple.dedicated) > 2000));	
-	document.querySelector(".active").textContent = "New";
+	newLink.classList.add('active');
+	document.querySelector("h2.active").textContent = "New";
 });
 
 largeLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => temple.area > 90000));
-	
-	document.querySelector(".active").textContent = "Large";
+	clearActive();
+	createTempleCard(temples.filter(temple => temple.area > 90000));	
+	largeLink.classList.add('active');
+	document.querySelector("h2.active").textContent = "Large";
 });
 
 smallLink.addEventListener("click", () => {
-	let smallTemples = temples.filter(temple => temple.area < 10000);
-	createTempleCard(smallTemples);
-	document.querySelector(".active").textContent = "Small";
+	clearActive();
+	createTempleCard(temples.filter(temple => temple.area < 10000));
+	smallLink.classList.add('active');
+	document.querySelector("h2.active").textContent = "Small";
+	
 });
 
 function createTempleCard(filteredTemples) {
@@ -158,7 +179,13 @@ function createTempleCard(filteredTemples) {
 		let img = document.createElement("img");
 
 		name.textContent = temple.templeName;
-		location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+		if (temple.location.length < 20) {
+			const invisibleChar = "\u200B";
+			location.innerHTML = `<span class="label">Location:</span> ${temple.location}<br>${invisibleChar}`;
+		}
+		else {
+			location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+		}
 		dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
 		area.innerHTML = `<span class="label">Size:</span> ${temple.area}sq ft`;
 		img.setAttribute("src", temple.imageUrl);
