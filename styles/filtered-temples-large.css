@@ -1,0 +1,47 @@
+@media only screen and (min-width: 580px) {   
+
+    section {  
+        position: relative;      
+        width: 280px;
+        height: 360px;
+    }
+
+    img {
+        display: block;
+        width: 280px; 
+    }    
+}
+
+@media only screen and (min-width: 780px) {
+
+    header {
+        justify-content: space-between;
+    }
+    nav {
+        align-content: center;
+    }
+
+	.navigation {
+		display: flex;
+        align-content: space-evenly;
+        justify-content: center;
+	}
+
+	.navigation li {
+		display: flex;
+		justify-content: flex-end;
+        padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+    h1.show {
+        display: block;
+    }
+}
