@@ -93,12 +93,8 @@ h1 {
 	background-color: #7AA;
 }
 
-.show .navigation a {
-    text-align: center;
-}
-
 .show li {
-	display: block;
+	display: flex;
     text-align: center;
 }
 
