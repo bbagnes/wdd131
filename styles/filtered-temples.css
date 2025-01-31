@@ -23,7 +23,6 @@
 
     --nav-background-color: #dcba93;
     --nav-link-color: black;
-    --nav-hover-link-color: #7daacc;
     --nav-hover-background-color: #EEE8D3;
 
     --border: rgba(0, 50, 50, 0.2);
@@ -88,8 +87,8 @@ h1 {
 }
 
 .navigation a:hover, .navigation a.active {
-	color: white;
-	background-color: #7AA;
+	color: black;
+	background-color: var(--nav-hover-background-color);
 }
 
 .show li {
