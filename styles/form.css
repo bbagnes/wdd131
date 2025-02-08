@@ -10,6 +10,15 @@ html {
      margin: 0; 
 }
 
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
 header {
     background-color: navy;
     margin: 0;
@@ -26,6 +35,7 @@ h1 {
     height: 60px;
     background-color: Navy;
     color: white;
+    font-family: "Roboto", serif;
     padding-left: 15px;
     padding-top: 12px;
     margin: 0;
