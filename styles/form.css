@@ -1,0 +1,123 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0; 
+}
+
+header {
+    background-color: navy;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 960px;
+    font-size: 16px;    
+    margin: 0 auto;
+}
+
+h1 {
+    height: 60px;
+    background-color: Navy;
+    color: white;
+    padding-left: 15px;
+    padding-top: 12px;
+    margin: 0;
+}
+
+.review fieldset {
+    margin: 2rem 0;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.review legend {
+    color: navy;
+    padding: 0 .5rem;
+    font-size: 1.2rem;    
+}
+
+.review label {
+    display: block;
+    padding-top: 1rem;
+    color: navy;
+    font-size: 1.2rem;
+}
+
+.review div {
+    padding-top: 1rem;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.review input[type="text"],
+.review select,
+.review textarea,
+.review input[type="date"]
+ {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: .75rem;
+    color:darkgreen;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.review textarea {
+    height: 180px;
+}
+
+.review input[type="radio"],
+.review input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.radio {
+    display:flex;
+}
+
+.radio label {
+    display: block;
+    font-size: larger;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.review input[type="submit"] {
+    border: 1px double White;
+    background-color: Teal;
+    color: white;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    font-size: larger;
+    font-weight: 700;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #AAA;
+}
+
+.review input:required, select:required {
+    border-left: 8px solid red;
+}
+
+.review input:required:valid, select:required:valid {
+    border-left: 8px solid teal;
+}
+
+footer {
+    background-color: Navy;
+    color: white;
+    padding: .5rem 2%;
+    text-align: center;
+}

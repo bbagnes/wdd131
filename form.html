@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <meta name="description" content="Product Review Page">
+    <meta name="author" content="Brigham Bagnes">
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review">
+            <fieldset>
+                <label>Product Name (required)<select id="product" name="product" required>
+                    <option value="" selected disabled>Select a Product...</option>
+                    
+                    </select>
+                </label>
+            </fieldset>            
+            <fieldset class="radio">
+                <legend>Overall Rating (required)</legend>
+                    <label>&star;<br>&#8203;<input type="radio" name="rating" value="1 star" required></label>
+                    <label>&star;&star;<br>&#8203;<input type="radio" name="rating" value="2 star" required></label>
+                    <label>&star;&star;&star;<br>&#8203;<input type="radio" name="rating" value="3 star" required></label>
+                    <label>&star;&star;&star;&star;<br>&#8203;<input type="radio" name="rating" value="4 star" required></label>
+                    <label>&star;&star;&star;&star;&star;<br>&#8203;<input type="radio" name="rating" value="5 star" required></label>  
+            </fieldset>
+            <fieldset>           
+                    <label>Date of Installation (required)<input type="date" id="installed" name="installed" required></label>                
+            </fieldset>
+            <fieldset>
+                <div>Which features did you find useful in this product?<br>
+                    (Select all that apply)
+                </div>
+                <label><input type="checkbox" name="durable" id="durable" value="yes">Durability</label>
+                <label><input type="checkbox" name="easy" id="easy" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performs" id="performs" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <Label>Write a Review (optional, limit: 100 words)<textarea id="userReview" name="userReview" maxlength="500"></textarea></Label>
+            </fieldset>
+            <fieldset>
+                <Label>Your Name (optional)<input type="text" id="user" name="user" maxlength="50"></Label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> * * * Brigham Bagnes * * * Utah, United States of America</p>
+        <p id="lastModified"></p>
+    </footer>    
+</body>
+</html>
