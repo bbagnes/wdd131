@@ -61,7 +61,7 @@ h1 {
 .review input[type="text"],
 .review select,
 .review textarea,
-.review input[type="date"]
+.review input[type="email"]
  {
     background-color: #eee;
     display: block;

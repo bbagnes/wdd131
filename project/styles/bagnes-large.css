@@ -1,0 +1,59 @@
+@media screen and (min-width: 580px) {
+
+    #hide {
+        display: none;
+        content: "";
+    }
+    section, div {
+        text-wrap: wrap;
+    }
+
+    .origin {
+        text-wrap: wrap;
+    }
+
+    .origin figure {
+        position: relative;
+        float: right;
+        margin-left: 6px;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    
+    nav {
+        align-content: center;
+    }
+
+	.navigation, .selection {
+		display: flex;
+        align-content:center;
+        justify-content: center;
+	}
+
+	.navigation li {
+		display: flex;
+		justify-content: flex-end;
+        padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+    h1.show {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1080px) {
+    header {
+        min-width: 960px;
+    }
+}
