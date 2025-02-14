@@ -46,7 +46,7 @@ const jimenez = [
         imageUrl: "images/male_avatar.gif"
     },
     {
-        name: "Francisco Gimenez",
+        name: "Francisco Jimenez",
         birth: "15 September 1889 Petilla de Aragón, Navarra, Navarra, Spain",        
         father: "Francisco Sebastiano Jimenez",
         mother: "Juana Gia Bisauta",
@@ -64,7 +64,7 @@ const joseJimenez = document.querySelector(".joseJimenez");
 const franciscoJimenez = document.querySelector(".francisoJimenez");
 
 onload = () => {
-	displayBio(jimenez.filter(person => person.name.includes('Dionisia')));
+	displayBio(jimenez.filter(jime => jime.name.includes('Dionisia')));
 	dionisiaJimenez.classList.add('active');
 }
 
@@ -91,32 +91,32 @@ franciscoSebastianoJimenez.addEventListener("click", () => {
 
 juanaGiaBisauta.addEventListener("click", () => {
 	clearActive();
-	displayBio(jimenez.filter(person => person.name == "Juana Gia Bisauta"));	
+	displayBio(jimenez.filter(jime => jime.name == "Juana Gia Bisauta"));	
 	juanaGiaBisauta.classList.add('active');
 });
 
 gregorioAntonioJimenez.addEventListener("click", () => {
 	clearActive();
-	displayBio(jimenez.filter(person => person.name == "Gregorio Antonio Jimenez"));	
+	displayBio(jimenez.filter(jime => jime.name == "Gregorio Antonio Jimenez"));	
 	gregorioAntonioJimenez.classList.add('active');
 });
 
 joseJimenez.addEventListener("click", () => {
 	clearActive();
-	displayBio(jimenez.filter(person => person.name == "Jose Jimenez"));	
+	displayBio(jimenez.filter(jime => jime.name == "Jose Jimenez"));	
 	joseJimenez.classList.add('active');
 });
 
 franciscoJimenez.addEventListener("click", () => {
 	clearActive();
-	displayBio(jimenez.filter(person => person.name == "Francisco Jimenez"));	
+	displayBio(jimenez.filter(jime => jime.name == "Francisco Jimenez"));	
 	franciscoJimenez.classList.add('active');
 });
 
-function displayBio(filteredjimenez) {
+function displayBio(filteredJimenez) {
 	document.querySelector(".profile").innerHTML = "";
 
-    filteredjimenez.foreach(jimenez => {    
+    filteredJimenez.forEach(jime => {    
         let bio = document.createElement("section");
         let personName = document.createElement("h3");
         let birth = document.createElement("p");
@@ -127,25 +127,25 @@ function displayBio(filteredjimenez) {
         let figure = document.createElement("figure");
         let img = document.createElement("img");
 
-        personName.textContent = `${jimenez.name}`;
-        birth.innerHTML = `<span class="label">Birth:</span> ${jimenez.birth}`;
-        father.innerHTML = `<span class="label">Father:</span> ${jimenez.father}`;
-        mother.innerHTML = `<span class="label">Mother:</span> ${jimenez.mother}`;
-        marriage.innerHTML = `<span class="label">Marriage:</span> ${jimenez.marriage}`;
-        spouse.innerHTML = `<span class="label">Spouse:</span> ${jimenez.spouse}`;
-        img.setAttribute("src", jimenez.imageUrl);
-        img.setAttribute("alt", jimenez.name);
+        personName.textContent = `${jime.name}`;
+        birth.innerHTML = `<span class="label">Birth:</span> ${jime.birth}`;
+        father.innerHTML = `<span class="label">Father:</span> ${jime.father}`;
+        mother.innerHTML = `<span class="label">Mother:</span> ${jime.mother}`;
+        marriage.innerHTML = `<span class="label">Marriage:</span> ${jime.marriage}`;
+        spouse.innerHTML = `<span class="label">Spouse:</span> ${jime.spouse}`;
+        img.setAttribute("src", jime.imageUrl);
+        img.setAttribute("alt", jime.name);
         img.setAttribute("loading", "lazy");
 
-        figure.appendChild(img);
-        bio.appendChild(figure);
         bio.appendChild(personName);
+        figure.appendChild(img);
+        bio.appendChild(figure);        
         bio.appendChild(birth);
         bio.appendChild(father);
         bio.appendChild(mother);
         bio.appendChild(marriage);
         bio.appendChild(spouse);		
 
-        document.querySelector(".profile").appendChild(bio);
+    document.querySelector(".profile").appendChild(bio);
 });
 }

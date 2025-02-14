@@ -103,15 +103,14 @@ function displayBio(filteredbagi) {
 		img.setAttribute("alt", bagi.name);
 		img.setAttribute("loading", "lazy");
 
-		figure.appendChild(img);
-		bio.appendChild(figure);
 		bio.appendChild(personName);
+		figure.appendChild(img);
+		bio.appendChild(figure);		
 		bio.appendChild(birth);
 		bio.appendChild(father);
 		bio.appendChild(mother);
 		bio.appendChild(marriage);
-		bio.appendChild(spouse);
-		
+		bio.appendChild(spouse);		
 
 	document.querySelector(".profile").appendChild(bio);
 });

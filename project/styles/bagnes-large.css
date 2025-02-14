@@ -1,5 +1,9 @@
 @media screen and (min-width: 580px) {
 
+    #menu.show::after {
+        right: -15rem;
+    }
+
     #hide {
         display: none;
         content: "";
@@ -49,7 +53,6 @@
     h1.show {
         display: block;
     }
-    
 }
 
 @media screen and (min-width: 1080px) {
