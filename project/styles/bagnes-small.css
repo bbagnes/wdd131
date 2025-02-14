@@ -316,9 +316,10 @@ footer {
 }
 
 footer a {
-    color: var(--accent1-color);
+    color: white;
     padding: 3px;
     text-decoration: none;
+    font-weight: 700;
 }
 
 footer a:hover, footer a:active {
