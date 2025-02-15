@@ -1,5 +1,9 @@
 @media screen and (min-width: 580px) {
 
+    h1 {
+        font-size: 3rem;
+    }
+
     #menu.show::after {
         right: -15rem;
     }
