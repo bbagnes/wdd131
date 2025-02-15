@@ -55,8 +55,3 @@
     }
 }
 
-@media screen and (min-width: 1080px) {
-    header {
-        min-width: 960px;
-    }
-}

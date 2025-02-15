@@ -46,8 +46,14 @@ header {
     background-color: var(--primary-color);
     margin: 0 auto;       
     justify-content: space-between;
-    padding-top: 10px;
     padding-bottom: 1px;   
+}
+
+header p, div p {
+    font-family: var(--paragraph-font);
+    background-color: var(--accent2-color);    
+    padding: 2px;
+    font-weight: 700;
 }
 
 header img {
@@ -160,12 +166,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-header p, div p {
-    font-family: var(--paragraph-font);
-    background-color: var(--accent2-color);    
-    padding: 2px;
-    font-weight: 700;
-}
+
 
 section, div, ol {
     display: block;

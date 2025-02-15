@@ -11,3 +11,19 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
     headerh1.classList.toggle('show');
 });
+
+onload = () => {
+    let visits = document.querySelector(".greeting");
+    let visitCount = Number(window.localStorage.getItem("visits")) || 0;
+        
+    if (visitCount !== 0) {
+         visits.textContent = `Welcome Back to Bagnes Family Genealogy`;
+        
+        } else {            
+            visits.textContent = `Welcome to Bagnes Family Genealogy`;
+        }
+
+        visitCount++;
+
+        window.localStorage.setItem("visits", visitCount);
+    };
